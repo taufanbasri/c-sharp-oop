@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Classes;
+
+var account = new BankAccount("Taufan Prasetyo", 1_000_000);
+
+System.Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
